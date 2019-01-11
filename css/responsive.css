@@ -25,17 +25,20 @@
 
 
 .row {
-    margin-right: -15px;
-    margin-left: -15px;
+    /* margin-right: -15px; */
+    /* margin-left: -15px; */
 }
+
 .row:before,
-.row:after{
+.row:after {
     display: table;
     content: " ";
 }
-.row:after{
+
+.row:after {
     clear: both;
 }
+
 .col-xs-1,
 .col-sm-1,
 .col-md-1,
