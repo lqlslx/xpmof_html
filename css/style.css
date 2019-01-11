@@ -1693,12 +1693,14 @@ em {
     transform: rotate3d(0, 0, 0, 0);
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    
 }
 
 .swing--in-top,
 .swing--out-top {
     -webkit-perspective-origin: center top;
     perspective-origin: center top;
+
 }
 
 .swing--in-top .direction-reveal__overlay,
@@ -2017,6 +2019,7 @@ em {
 .rotate--in-top .direction-reveal__overlay {
     -webkit-animation-name: rotate--in-top;
     animation-name: rotate--in-top;
+    
 }
 
 .rotate--in-bottom .direction-reveal__overlay {
@@ -2037,21 +2040,25 @@ em {
 .rotate--out-top .direction-reveal__overlay {
     -webkit-animation-name: rotate--out-top;
     animation-name: rotate--out-top;
+    opacity:  0;
 }
 
 .rotate--out-bottom .direction-reveal__overlay {
     -webkit-animation-name: rotate--out-bottom;
     animation-name: rotate--out-bottom;
+    opacity:  0;
 }
 
 .rotate--out-left .direction-reveal__overlay {
     -webkit-animation-name: rotate--out-left;
     animation-name: rotate--out-left;
+    opacity:  0;
 }
 
 .rotate--out-right .direction-reveal__overlay {
     -webkit-animation-name: rotate--out-right;
     animation-name: rotate--out-right;
+    opacity: 0;
 }
 
 .direction-reveal [class*='rotate--'] .direction-reveal__overlay {
@@ -2065,12 +2072,14 @@ em {
 .rotate--out-top .direction-reveal__overlay {
     -webkit-transform-origin: left top;
     transform-origin: left top;
+    opacity:  0;
 }
 
 .rotate--in-bottom .direction-reveal__overlay,
 .rotate--out-bottom .direction-reveal__overlay {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
+    opacity:  0;
 }
 
 .rotate--in-left .direction-reveal__overlay,
@@ -2199,10 +2208,14 @@ em {
 
 .direction-reveal__card {
     display: inline-block;
-    position: relative;
+    position: absolute;
     overflow: hidden;
+    top: 0;
+    left: 0;
     -webkit-perspective: 400px;
     perspective: 400px;
+    width: 100%;
+    height: 120%;
 }
 
 .direction-reveal__overlay {
@@ -2211,9 +2224,9 @@ em {
     left: 0;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
-    width: 100%;
-    height: 100%;
-    padding: 15px;
+    padding: 21.9% 36%;
+    margin-left:  14%;
+    margin-top: 5%;
     color: #fff;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.2);
@@ -2240,32 +2253,28 @@ em {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 1500px;
-    margin-left: -150px;
 }
 
-.direction-reveal--3-grid-flexbox li {
+/* .direction-reveal--3-grid-flexbox li {
     width: 500px;
     margin: 10px 0;
     height: 350px;
-}
+} */
 
 .direction-reveal--3-grid-flexbox li .case_list_li {
     background: url(../images/computer-case.png) no-repeat;
     background-size: 100%;
-    height: 300px;
+    padding-top: 70%;
+    position: relative;
 }
 
 .direction-reveal--3-grid-flexbox .direction-reveal__card {
     -webkit-box-flex: 0;
-    width: 356px;
-    height: 214px;
     transition: 0.3s;
-    margin: 25px 0 0 73px;
 }
 
 .direction-reveal--3-grid-flexbox li .case_list_li_title {
-    margin-top: 50px;
+    margin-top: 14%;
     text-align: center;
     padding: 0 40px;
 }
@@ -2291,10 +2300,7 @@ em {
 
 
 
-.direction-reveal--3-grid-flexbox li img {
-    width: 100%;
-    height: 100%;
-}
+.direction-reveal--3-grid-flexbox li img {position: absolute;left: 0;top: 0;width: 100%;height: 100%;}
 
 .direction-reveal--3-grid-cssgrid {
     display: -ms-grid;
@@ -2321,8 +2327,8 @@ em {
     height: 35px;
     text-align: center;
     line-height: 35px;
-    top: 110px;
-    left: 70px;
+    top: 40%;
+    left: 20%;
     background: #da251c;
 }
 
@@ -2338,8 +2344,8 @@ em {
     height: 35px;
     text-align: center;
     line-height: 35px;
-    top: 110px;
-    right: 70px;
+    top: 40%;
+    right: 20%;
     background: #f97a1d;
 }
 
@@ -2828,9 +2834,7 @@ em {
     flex-wrap: wrap;
 }
 
-.case_list {
-    padding: 50px 0;
-}
+
 
 .case_fy {
     height: 80px;
@@ -2996,9 +3000,6 @@ pre {
     border-radius: 4px;
 }
 
-.case_list {
-    padding: 50px 0;
-}
 
 .case_fy {
     height: 80px;
@@ -3814,9 +3815,23 @@ pre {
     margin-top: 29px;
     margin-left: 31px;
 }
-
-
-
+.case_list_li .img a {
+    position: relative;
+    padding-bottom: 60%;
+    display: block
+}
+.direction-cc{
+    width: 255px;
+    height: 159px;
+    overflow: hidden;
+}
+.case_list_li .img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5% 14%;
+    width: 100%;
+}
 .pr_ny_dp {
     height: 540px;
     background: #da251c;
@@ -7999,6 +8014,7 @@ pre {
     font-size: 40px;
     font-weight: lighter;
     margin: auto;
+    text-align: center;
     padding-top: 30px;
 }
 
@@ -8017,7 +8033,8 @@ pre {
 
 .abuot_list li {
     display: inline-block;
-    margin: 0 40px;
+    /* margin: 0 40px; */
+    padding: .5rem 0;
 }
 
 .abuot_list li:hover a {
@@ -8392,7 +8409,12 @@ pre {
     text-align: center;
     height: 48px
 }
-
+.padding_del {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
 .weiHr {
     width: 1000px;
     height: 20px;
@@ -8431,6 +8453,49 @@ pre {
 .select_case table td span a {
     color: #fff !important;
 }
+.abuot_zhengwen img{
+    display: block;
+    margin: 1rem auto;
+}
+
+.demo{
+    margin-top: 2%;
+}
+@media (max-width: 1199px) {
+    .case_banner{
+        width: 100%;
+        max-height: 270px;
+    }
+    .direction-reveal__overlay{
+            margin-top: -1%;
+    }
+    .demo ul li{
+        padding-bottom: 6%;
+    }
+}
+
+@media (max-width: 991px) {
+    .case_banner{
+        width: 100%;
+        max-height: 140px;
+        background-size: cover;
+    }
+    .direction-reveal--3-grid-flexbox .direction-reveal__card{
+    padding-top: 8%;
+    }
+   
+    
+    .case_list{
+        margin-top: 1rem;
+    }
+    .direction-reveal--3-grid-flexbox li img{
+        width: 100%;
+    }
+    
+}
+
+
+
 
 @media (max-width: 767px) {
 
@@ -8444,9 +8509,46 @@ pre {
         background: #f97a1d;
         background-size: 18px;
     }
-
+    .abuot_zhengwen{
+        padding-top: 0;
+    }
+    .abuot_contant h3{
+        font-size: 2rem;
+    }
+     .abuot_zhengwen img{
+         width: 100%;
+         height: auto;
+         margin: .5rem auto;
+     }
+     .case_top{
+        width: 100%;
+    }
+    .case_top .case_search{
+        width: 270px;
+    }
+    .case_top .case_search .sea_t{
+        width: 230px;
+    }
+    .case_top .case_search .sea_b{
+        width: 30px;
+    }
+    .case_top .case_search{
+        margin-right: 60px;
+    }
+    .direction-reveal--3-grid-flexbox li .case_list_li{
+        background-size: 100%;
+        height: auto;
+        padding-bottom: 6%;
+    }
+   
+   
+    
+     
+     .direction-reveal--3-grid-flexbox li .case_list_li_title{
+        margin-top: 10px;
+     }
+     .direction-reveal__overlay{
+         top: 0;
+     }
 }
 
-@media (max-width: 991px) {}
-
-@media (max-width: 1199px) {}
