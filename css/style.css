@@ -4499,6 +4499,7 @@ pre {
     margin: 0 10px 10px 10px;
     background: #fff;
     transition: 0.3s;
+    display:inline-block;
 }
 
 .yycj_zy .yycj_zy_l li .yycj_zy_l_d {
@@ -4547,6 +4548,7 @@ pre {
     padding-top: 30px;
 }
 
+.yycj_zy .yycj_zy_l{ text-align: center;}
 .yycj_zy_l_fy li {
     display: inline-block;
     padding: 10px;
