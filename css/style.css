@@ -29,7 +29,7 @@ body {
     font: 14px/1.231 'Microsoft YaHei', arial, helvetica, clean, sans-serif;
     color: #333;
     margin: 0;
-    line-height: 1;
+    line-height: 1; background: #f5f5f7;
 }
 
 :focus {
@@ -5710,7 +5710,7 @@ pre {
     width: 100%;
     margin: 0 auto;
     position: relative;
-    height: 220px;
+    /* height: 220px; */
     color: #333;
     text-align: center;
     padding: 50px 0 0;
@@ -5746,15 +5746,16 @@ pre {
     color: #f8efe8;
 }
 
-.gm_banner ul {}
+ 
 
-.gm_banner ul li {
-    float: left;
+.gm_banner .mainli {
+   
     cursor: pointer;
-    width: 33.33%;
+    text-align: center; padding-top: 20px;;
+    
 }
 
-.gm_banner ul li em {
+.gm_banner .mainli em {
     display: block;
     font-family: iconfont;
     font-size: 76px;
@@ -5768,7 +5769,7 @@ pre {
     padding: 15px;
 }
 
-.gm_banner ul li i {
+.gm_banner .mainli i {
     display: none;
     font-family: iconfont;
     font-size: 76px;
@@ -5782,22 +5783,22 @@ pre {
     padding: 15px;
 }
 
-.gm_banner ul li:hover em {
+.gm_banner .mainli:hover em {
     display: none;
 }
 
-.gm_banner ul li:hover i {
+.gm_banner .mainli:hover i {
     display: block;
 }
 
-.gm_banner ul li span {
+.gm_banner .mainli span {
     display: block;
     font-size: 22px;
     margin: 22px 0 5px;
     line-height: 26px;
 }
 
-.gm_banner ul li b {
+.gm_banner .mainli b {
     display: block;
     font-weight: normal;
     font-size: 15px;
@@ -5904,11 +5905,10 @@ pre {
     padding: 50px 0;
     margin-bottom: 50px;
 }
-
-.buy_qoa .main {}
+ 
 
 .buy_list {
-    width: 1030px;
+    width: 91%;
     margin: auto;
     padding: 20px 15px;
     margin-bottom: 10px;
@@ -6953,7 +6953,7 @@ pre {
 }
 
 .xzym_t .xzym_azhj {
-    width: 800px;
+    width: auto;
     margin: 20px auto;
     background: #fcf0f1;
     padding: 30px 0;
@@ -7084,8 +7084,9 @@ pre {
     color: #f97a1d;
 }
 
+ 
 .xzym_t .xzym_azhj {
-    width: 800px;
+    max-width:80%;
     margin: 20px auto;
     background: #f8f8f8;
     padding: 30px 0;
@@ -7644,34 +7645,28 @@ margin: 0 2%;
 /* 商业授权 begin */
 .website {
     width: 100%;
-    height: 730px;
-    padding: 50px 0;
+    height: auto;
+    padding: 50px 0 0;
 }
 
 .abstract {
-    height: 486px;
     margin-top: 60px;
-    float: none;
-    width: 1200px;
     margin: 0 auto;
     padding: 0;
 }
 
 .website .free,
 .website .charge {
-    width: 480px;
+    width: 90%;
     overflow: hidden;
-    margin: 0 70px;
-    height: 756px;
-    display: inline-block;
+    height: auto;
     background-color: #fff;
-    float: left;
     border-radius: 7px;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
 }
 
 .website .charge {
-    margin-left: 25px;
 }
 
 .website .free .background,
@@ -7685,17 +7680,16 @@ margin: 0 2%;
 }
 
 .website .background {
-    width: inherit;
     height: 155px;
-    display: table-cell;
     vertical-align: middle;
     color: #fff;
     text-align: center;
+    width: 100%;
 }
 
 .website .background .title {
     font-size: 38px;
-    font-family: "微软雅黑";
+    font-family: "微软雅黑";padding-top: 40px;
 }
 
 .website .background .price-txt {
@@ -7725,7 +7719,7 @@ margin: 0 2%;
 
 .website .info {
     widows: inherit;
-    height: 631px;
+height: 650px;
     font-size: 14px;
     font-family: "微软雅黑";
     position: relative;
@@ -7759,17 +7753,15 @@ margin: 0 2%;
 
 .website .info .desc-btn {
     display: block;
-    width: 364px;
+    width: 80%;
     height: 38px;
     line-height: 38px;
     text-align: center;
     margin: 0 auto;
-    bottom: 60px;
-    position: absolute;
-    left: 0;
-    right: 0;
     color: #fff;
     border-radius: 19px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* 商业授权 end */
@@ -8031,6 +8023,16 @@ margin: 0 2%;
 
 
 
+
+@media (max-width: 1199px) {
+
+
+}
+
+
+
+@media (max-width: 991px) {
+
     .Hostny{height: 479px;}.HKong{height: 557px;}
     #accordion .panel-title a{margin-left:0px;}
 
@@ -8115,6 +8117,8 @@ margin: 0 2%;
         background: #f97a1d;
         background-size: 18px;
     }
+   .website .info{height: auto;}
+
     .cust h3 {
         font-size: 28px;
         padding-top: 70px;
