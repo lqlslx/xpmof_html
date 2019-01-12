@@ -3659,10 +3659,11 @@ pre {
  
 }
 .direction-cc{ background: rgb(228, 228, 228); padding: 10px; border-radius: 10px 10px 0 0;
+    
    
 margin: 0 8%; position: relative;
     overflow: hidden;    
-
+}
 .case_list_li .img{
     width: 100%;
     height: 150px;
