@@ -827,39 +827,21 @@ em {
 }
 
 /*属性组合搜索*/
-.select_case {
-    width: 100%;
+.select_case {    
     margin-bottom: 15px;
     background: #fff;
+	border: 1px solid #eee; line-height: 30px; font-size: 14px; padding: 10px;
 }
 
-.select_case table {
-    border-collapse: collapse;
-    border: 1px solid #eee;
-}
 
-.select_case table td {
-    line-height: 30px;
-    border-bottom: 1px dotted #eee;
-    font-size: 14px;
-    padding: 8px 0;
-}
-
-.select_case table td.td_left {
-    background: #f7f7f7;
-    text-align: center;
-    color: #000;
-}
-
-.select_case table td a {
-    margin-left: 8px;
+.select_case a {
+    margin: 0 5px;
     display: inline-block;
     white-space: nowrap;
     padding: 0 5px;
 }
 
-.select_case table a:hover {
-    margin-left: 8px;
+.select_case a:hover {    
     display: inline-block;
     white-space: nowrap;
     background: #da251c;
@@ -870,16 +852,8 @@ em {
     color: #fff !important;
 }
 
-.select_case table a.current {
-    margin-left: 8px;
-    display: inline-block;
-    white-space: nowrap;
-    background: #da251c;
-    padding: 0 5px;
-    height: 25px;
-    line-height: 25px;
-    border-radius: 1px;
-    color: #fff !important;
+.select_case a.current {
+background: #da251c; color: #fff;   
 }
 
 .ajax_select_a a {
@@ -892,8 +866,7 @@ em {
 }
 
 .sort {
-    color: #555;
-    height: 35px;
+    color: #555; 
     line-height: 35px;
     padding-bottom: 10px;
     border-bottom: #BCBCBC 1px dotted;
@@ -901,15 +874,14 @@ em {
 }
 
 .serbz {
-    float: left;
-    width: 500px;
+    float: left;   
     height: 35px;
     text-align: left
 }
 
 .serbz b {
     float: left;
-    font-weight: bold;
+    font-weight: bold; padding-left: 10px;
 }
 
 .serbz span {
@@ -917,7 +889,7 @@ em {
     display: block;
     line-height: 35px;
     height: 35px;
-    padding: 0 10px 0 35px;
+    padding: 0 12px 0 35px; margin-left: 1px;
     background: url(../images/sortbg.gif) no-repeat;
 }
 
@@ -934,7 +906,7 @@ em {
 }
 
 .Right {
-    float: right
+    float: right; padding-right: 15px;
 }
 
 .red {
@@ -1118,8 +1090,8 @@ em {
 
 .zxmb .zxmb_list li .l_b {
     position: absolute;
-    bottom: 6%;
-    width: 90%;
+    top: 380px;
+    width: 350px;
     left: 20px;
 }
 
@@ -2245,6 +2217,10 @@ em {
     font-size: 14px;
 }
 
+
+/*lq-成品模板home*/
+.padding_del{ padding-left:0; padding-right:0; margin-left:auto; margin-right:auto; }
+
 /*�������*/
 .trial_banner {
     height: 300px;
@@ -2419,19 +2395,15 @@ em {
     overflow: hidden;
 }
 
-.trial_list ul {
-    width: 1230px;
-}
 
-.trial_list li {
-    width: 390px;
-    float: left;
+.trial_list li { 
     position: relative;
-    height: 380px;
+    height: auto;
     background: #fff;
     transition: 0.3s;
     box-shadow: 0 0 5px #f1f1f1;
-    margin: 0 15px 30px 0;
+    margin: 10px 10px 30px 10px;
+	padding-bottom: 20px;
 }
 
 .trial_list li:hover {
@@ -2439,11 +2411,17 @@ em {
 }
 
 .trial_list li .t_img {
-    width: 390px;
-    height: 260px;
+    width: 100%;    
     overflow: hidden;
-    transition: 0.6s;
+    transition: 0.6s; position: relative;
 }
+
+.trial_list li .t_img img {
+    width: 100%;
+    height: 260px;
+    transition: 0.3s;
+}
+
 
 .trial_list li .t_img i {
     width: 100%;
@@ -2458,9 +2436,7 @@ em {
     transition: all ease-out .5s;
 }
 
-.trial_list li:hover .t_img i {
-    width: 390px;
-    height: 260px;
+.trial_list li:hover .t_img i {    
     opacity: 1;
     -webkit-transform: rotateX(0deg) scale(1, 1);
     transform: rotateX(0deg) scale(1, 1);
@@ -2468,22 +2444,16 @@ em {
     background: rgba(0, 0, 0, 0.3);
 }
 
-.trial_list li img {
-    width: 100%;
-    height: 260px;
-    transition: 0.3s;
-}
 
 .trial_list li .l_yc {
     width: 100%;
-    height: 40px;
-    line-height: 40px;
+    height: 35px; padding-top: 10px; 
     text-align: center;
-    background: rgba(255, 255, 255, 0.8);
-    margin-top: -40px;
+    background: rgba(255, 255, 255, 0.8);   
     transition: 0.3s;
     position: absolute;
-    z-index: -1;
+    z-index: -1; opacity: 0;
+	left: 0px; bottom: 0px;
 }
 
 .trial_list li .l_yc span a {
@@ -2508,27 +2478,28 @@ em {
 }
 
 .trial_list li:hover .l_yc {
-    z-index: 1;
-    margin-top: -140px;
+    z-index: 1; opacity: 1;
+    bottom:50%; margin-bottom: -30px;
     transition: 0.3s;
 }
 
-.trial_list li .l_bt {
-    position: absolute;
-    top: 280px;
+.trial_list li .l_bt { padding-top: 20px;
     width: 100%;
 }
 
+
 .trial_list li .trial_list_miaoshu {
-    color: #999;
-    position: absolute;
-    top: 340px;
-    padding: 0 10px;
+    color: #999;    
+    padding: 0 10px; height: 20px; line-height: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 365px;
+    white-space: nowrap; margin-top: 5px;
+    
 }
+
+
+.trial_list li h3{ height: 20px; line-height: 20px; overflow: hidden; }
+
 
 .trial_list li h3 a {
     font-size: 16px;
@@ -2564,8 +2535,8 @@ em {
 .trial_list li .l_bt h4 {
     margin-left: 10px;
     color: #da251c;
-    line-height: 25px;
-    margin-top: 10px;
+    line-height: 25px; height: 25px; overflow: hidden;
+    margin-top: 5px;
 }
 
 .trial_list li .l_bt h4 i {
@@ -2633,6 +2604,16 @@ em {
 .trial_b li:nth-child(3) {
     background: #f58a60;
 }
+
+/*lq-成品模板end*/
+
+
+
+
+
+
+
+
 
 /*����*/
 .download_banner {
@@ -4385,12 +4366,14 @@ pre {
     color: #fff;
 }
 
+
+/*lq_无忧服务 home*/
 .lq_clear {
     clear: both;
 }
+.lq_clear{clear:both; }
 
-.wyfw {
-    width: 100%;
+.wyfw { width: 100%;
     height: 240px;
     background: #da251c;
     background: -moz-linear-gradient(left, #f97a1d 0%, #da251c 100%);
@@ -4438,7 +4421,7 @@ pre {
 .wyfw_bd .wyfw_bd_n li {
     width: 24%;
     float: left;
-    margin: 0 0.5% 0 0.5%;
+    margin: 0 0.5% 0 0.5% ;
 }
 
 .wyfw_bd .wyfw_bd_n li {
@@ -4496,20 +4479,18 @@ pre {
 .wyfw_bd_n_7,
 .wyfw_bd_n_8,
 .wyfw_bd_n_9 {
-    border-bottom: 2px solid #fff;
-    overflow: hidden;
-    height: 62px;
-    line-height: 62px;
+    border-bottom: 2px solid #fff; overflow: hidden; height: 62px; line-height: 62px;
 }
 
-.wyfw_bd_n_8 a {
-    width: 80%;
+.wyfw_bd_n_8 a
+ {
+    width: 50%;
     height: 30px;
     line-height: 30px;
-    margin: 15px 10%;
+    margin: 0 auto; margin-top: 15px;
     font-size: 14px;
-    background: #999 url(../images/zixun.png) no-repeat 20%;
-    padding-left: 15px;
+    background: #999 url(../images/zixun.png) no-repeat 25%;
+    padding-left: 20px;
     color: #fff;
     display: block;
     border-radius: 20px;
@@ -4517,8 +4498,7 @@ pre {
 }
 
 .wyfw_bd_n_8 a:hover {
-    background: #f97a1d url(../images/zixun.png) no-repeat 20%;
-    background-size: 18px;
+    background: #f97a1d url(../images/zixun.png) no-repeat 20%;    background-size: 18px; 
 }
 
 .wyfw_bd .wyfw_bd_n li:nth-child(2) .wyfw_bd_n_9 a,
@@ -4687,23 +4667,25 @@ pre {
 }
 
 .wyfw_notice .container {
-    height: 400px;
-    background: #faf7f7;
+    height: auto;
+    background: #faf7f7; padding-bottom: 40px;
 }
 
 .wyfw_notice h3 {
     font-size: 18px;
-    padding: 30px 50px 20px 50px;
+    padding: 30px 5% 20px 5%;
 }
 
 .wyfw_notice p {
-    margin: 0 50px;
-    line-height: 36px;
+    margin: 0 5%;
+    line-height: 2.4;
     background: #fff;
-    padding: 10px 20px;
+    padding: 10px 3%;
 }
 
-/*Ӧ�ò����ҳ*/
+/*lq_无忧服务 end*/
+
+
 .yycj_ny {
     height: 60px;
     line-height: 60px;
@@ -6033,7 +6015,6 @@ pre {
     cursor: pointer;
 }
 
-/*���������ύ*/
 .xpmfbuyback {
     background: #da251c;
     height: 10px;
@@ -7970,6 +7951,7 @@ pre {
     color: #fff !important;
 }
 
+@media (max-width: 1199px) { }
 @media (max-width: 767px) {
     .wyfw_bd_n_8 a {
         background: #999;
@@ -7977,10 +7959,14 @@ pre {
         border-radius: 20px;
     }
 
-    .wyfw_bd_n_8 a:hover {
-        background: #f97a1d;
-        background-size: 18px;
-    }
+@media (max-width: 991px) {
+
+/*---lq-home--*/
+.wyfw_bd_n_8 a { width: 60%; margin: 0 auto; margin-top: 15px; font-size: 14px;  background: #999 url(../images/zixun.png) no-repeat 18%; padding-left: 15px; background-size: 18px; }
+.wyfw_bd_n_8 a:hover { background: #f97a1d url(../images/zixun.png) no-repeat 20%; background-size: 18px; }
+.wyfw h3{ font-size: 30px; }
+.trial_list li .t_img img { height: 230px; }
+/*---lq-end--*/
 
     .fwq .fwq_b {
         background-size: 100%
@@ -8018,6 +8004,21 @@ pre {
     }
 }
 
-@media (max-width: 991px) {}
+@media (max-width: 767px) {
+
+/*---lq-home--*/
+.wyfw_bd_n_8 a { width: 90%;  background: #999; padding-left: 0; border-radius: 20px; }
+.wyfw_bd_n_8 a:hover {  background: #f97a1d;  background-size: 18px; }
+.wyfw h3{ font-size: 24px; }
+.wyfw p { font-size: 18px; }
+.trial_list li .t_img img { height: auto; }
+.trial_s .trial_s_1 .t_search{ width: 240px;}
+.trial_s .trial_s_1 { width: 360px; }
+.trial_s .trial_s_1 .t_search .sear_t{ width: 180px; }
+.trial_s .trial_s_1 .t_search .sear_bt{ width: 50px; }
+.trial_b li{ padding: 15px 12px; }
+/*---lq-end--*/
+
+}
 
 @media (max-width: 1199px) {}
