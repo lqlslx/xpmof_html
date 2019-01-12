@@ -4309,10 +4309,11 @@ pre {
     width: 374px;
     border: 2px solid #f8f8f8;
     height: 120px;
-    float: left;
+   
     margin: 0 10px 10px 10px;
     background: #fff;
     transition: 0.3s;
+    display:inline-block;
 }
 
 .yycj_zy .yycj_zy_l li .yycj_zy_l_d {
@@ -4361,6 +4362,7 @@ pre {
     padding-top: 30px;
 }
 
+.yycj_zy .yycj_zy_l{ text-align: center;}
 .yycj_zy_l_fy li {
     display: inline-block;
     padding: 10px;
@@ -8112,6 +8114,31 @@ height: 650px;
         padding-left: 0;
         border-radius: 20px;
     }
+
+.wyfw_bd_n_8 a { background: #999; padding-left: 0; border-radius: 20px; }
+.wyfw_bd_n_8 a:hover {  background: #f97a1d;  background-size: 18px; }
+.zzfw_list {
+    background: #f3f7f9 !important;
+    padding: 25px 0 !important;
+    font-size: 21px !important;
+    letter-spacing: 10px;
+    color: #f97a1d;
+    transform: scale();
+    
+    
+}
+}
+
+@media (max-width: 991px) {
+
+
+}
+
+@media (max-width: 1199px) {
+
+
+}
+
 
     .wyfw_bd_n_8 a:hover {
         background: #f97a1d;
