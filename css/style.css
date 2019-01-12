@@ -8430,7 +8430,16 @@ pre {
 
 .wyfw_bd_n_8 a { background: #999; padding-left: 0; border-radius: 20px; }
 .wyfw_bd_n_8 a:hover {  background: #f97a1d;  background-size: 18px; }
-
+.zzfw_list {
+    background: #f3f7f9 !important;
+    padding: 25px 0 !important;
+    font-size: 21px !important;
+    letter-spacing: 10px;
+    color: #f97a1d;
+    transform: scale();
+    
+    
+}
 }
 
 @media (max-width: 991px) {
