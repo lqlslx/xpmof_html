@@ -5941,7 +5941,7 @@ margin: 0 8%; position: relative;
  
 
 .buy_list {
-    width: 91%;
+    width: 90%;
     margin: auto;
     padding: 20px 15px;
     margin-bottom: 10px;
@@ -7775,7 +7775,7 @@ height: 650px;
     font-size: 18px;
 }
 
-.website .charge .info .desc span {}
+
 
 .website .f-dot {
     display: inline-block;
@@ -8379,6 +8379,13 @@ height: 650px;
 .trial_s .trial_s_1 .t_search .sear_t{ width: 180px; }
 .trial_s .trial_s_1 .t_search .sear_bt{ width: 50px; }
 .trial_b li{ padding: 15px 12px; }
+
+.website .charge .info .desc.ziti span{font-size: 14px;}
+.website .free .info .desc.ziti span{font-size: 14px;}
+
+.website .free,.website .charge{width:100%;}
+
+.buy_ab .buy_list{width:85%;}
 /*---lq-end--*/
 
 }
