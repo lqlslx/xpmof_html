@@ -5422,10 +5422,10 @@ s .wyfw_bd .wyfw_buy_3 a {
 }
 
 .Hostny {
-    height: 480px;
     padding-top: 30px;
     margin-top: 30px;
     border-top: 3px solid #da251c;
+    margin-bottom: 20px;
 }
 
 .Hostny .Hostny_t {
@@ -5460,9 +5460,10 @@ s .wyfw_bd .wyfw_buy_3 a {
 
 .Hostny .Hostny_nr .Hostny_li {
     float: left;
-    width: 320px;
+    width: 33.333%;
     padding: 27px 22px 0 30px;
     border-right: 1px dashed #dedede;
+    box-sizing: border-box;
 }
 
 .Hostny .Hostny_nr .Hostny_li:last-child {
@@ -8235,6 +8236,17 @@ s .wyfw_bd .wyfw_buy_3 a {
     .case_top span{
         display: none;
     }
+
+    .zz_banner {
+        font-size: 26px;
+    }
+    .Hostny .Hostny_nr .Hostny_li {
+        padding: 10px;
+    }
+
+    .Hostny .Hostny_nr .Hostny_bye a {
+        width: 80%;
+    }
 }
 
 
@@ -8390,12 +8402,6 @@ s .wyfw_bd .wyfw_buy_3 a {
     .Hostny .Hostny_nr {
         width: 99%;
     }
-
-    .Hostny .Hostny_nr .Hostny_li {
-        width: 30%;
-        padding: 27px 10px 0 10px;
-    }
-
     .Hostny .Hostny_nr .Hostny_li .Hostny_nr_2 {
         height: 57px;
     }
@@ -8410,14 +8416,6 @@ s .wyfw_bd .wyfw_buy_3 a {
     }
 
 
-    .Hostny {
-        height: 424px;
-    }
-
-    .HKong {
-        height: 442px;
-    }
-
     #accordion .panel-title a {
         margin-left: 0px;
     }
@@ -8426,10 +8424,6 @@ s .wyfw_bd .wyfw_buy_3 a {
         width: 99%;
     }
 
-    .Hostny .Hostny_nr .Hostny_li {
-        width: 30%;
-        padding: 27px 10px 0 10px;
-    }
 
     .Hostny .Hostny_nr .Hostny_li .Hostny_nr_2 {
         height: 122px;
@@ -8444,13 +8438,7 @@ s .wyfw_bd .wyfw_buy_3 a {
         margin: 0 auto;
     }
 
-    .Hostny {
-        height: 479px;
-    }
 
-    .HKong {
-        height: 557px;
-    }
 
     #accordion .panel-title a {
         margin-left: 0px;
@@ -8505,13 +8493,8 @@ s .wyfw_bd .wyfw_buy_3 a {
     }
 
     .Hostny .Hostny_nr {
-        width: 98%;
         height: auto;
-    }
-
-    .Hostny .Hostny_nr .Hostny_li {
-        width: 30%;
-        padding: 27px 5px 0 5px;
+        display: flex;
     }
 
     .Hostny .Hostny_nr .Hostny_li h3 {
@@ -8543,11 +8526,6 @@ s .wyfw_bd .wyfw_buy_3 a {
     .Hostny .Hostny_nr .Hostny_li .hongkong {
         height: auto;
     }
-
-    .Hostny {
-        height: 557px;
-    }
-
     #accordion .panel-title a {
         margin-left: 0px;
     }
