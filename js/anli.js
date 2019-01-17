@@ -5,7 +5,6 @@
         Object.defineProperty(exports, "__esModule", {
             value: true
         });
-
         /**
           Direction aware content reveals.
         

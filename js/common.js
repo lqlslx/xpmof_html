@@ -1,4 +1,15 @@
-﻿//var token = " eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6Imx1b2JpbiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJsdW9iaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJDb25zdW1lciIsImV4cCI6MTU0MTg0MTQ0NSwiaXNzIjoibmV3Ym94IiwiYXVkIjoibmV3Ym94LmF1ZGllbmNlIn0.MgBS87rtlucU-f1M5E03tDEhHZSrX_B0ocRImAnLzHQ";
+﻿/*
+ * @Author: mikey.zhaopeng 
+ * @Date: 2019-01-14 11:43:50 
+ * @Last Modified by: Twinkleee
+ * @Last Modified time: 2019-01-14 15:47:06
+ */
+
+ 
+
+
+ 
+//var token = " eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6Imx1b2JpbiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJsdW9iaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJDb25zdW1lciIsImV4cCI6MTU0MTg0MTQ0NSwiaXNzIjoibmV3Ym94IiwiYXVkIjoibmV3Ym94LmF1ZGllbmNlIn0.MgBS87rtlucU-f1M5E03tDEhHZSrX_B0ocRImAnLzHQ";
 
 function payment(json) {
     $.ajax({
@@ -70,3 +81,5 @@ function refresh_token(fn) {
     }
 
 };
+
+
