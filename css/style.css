@@ -8186,23 +8186,21 @@ s .wyfw_bd .wyfw_buy_3 a {
     }
 
     /*---lq-home--*/
-    .wyfw_bd_n_8 a {
-        width: 90%;
-        background: #999;
-        padding-left: 0;
-        border-radius: 20px;
-    }
-
-    .wyfw_bd_n_8 a {
-        background: #999;
-        padding-left: 0;
-        border-radius: 20px;
-    }
-
-    .wyfw_bd_n_8 a:hover {
-        background: #f97a1d;
-        background-size: 18px;
-    }
+  
+.wyfw_bd_n_8 a { width: 90%;  background: #999; padding-left: 0; border-radius: 20px; }
+.wyfw_bd_n_8 a:hover {  background: #f97a1d;  background-size: 18px; }
+.wyfw h3{ font-size: 24px; }
+.wyfw p { font-size: 18px; }
+.trial_list li .t_img img { height: auto; }
+.trial_s .trial_s_1 .t_search{ width: 240px; margin: 0 auto; }
+.trial_s .trial_s_1 { width: auto; }
+.trial_s .trial_s_1 .t_search .sear_t{ width: 180px; }
+.trial_s .trial_s_1 .t_search .sear_bt{ width: 50px; }
+.trial_b li{ padding: 15px 12px; }
+.trial_banner span{ font-size: 20px; }
+.trial_s {  padding-bottom: 20px; overflow: hidden; padding-top: 20px; height: auto; }
+.trial_s .trial_s_1{ height: auto; }
+  
 
     .zzfw_list {
         background: #f3f7f9 !important;
@@ -8217,43 +8215,6 @@ s .wyfw_bd .wyfw_buy_3 a {
 
     .yycj_zy_l {
         width: 100%;
-    }
-
-    .wyfw_bd_n_8 a:hover {
-        background: #f97a1d;
-        background-size: 18px;
-    }
-
-    .wyfw h3 {
-        font-size: 24px;
-    }
-
-    .wyfw p {
-        font-size: 18px;
-    }
-
-    .trial_list li .t_img img {
-        height: auto;
-    }
-
-    .trial_s .trial_s_1 .t_search {
-        width: 240px;
-    }
-
-    .trial_s .trial_s_1 {
-        width: 360px;
-    }
-
-    .trial_s .trial_s_1 .t_search .sear_t {
-        width: 180px;
-    }
-
-    .trial_s .trial_s_1 .t_search .sear_bt {
-        width: 50px;
-    }
-
-    .trial_b li {
-        padding: 15px 12px;
     }
 
     .website .charge .info .desc.ziti span {
@@ -8294,8 +8255,16 @@ s .wyfw_bd .wyfw_buy_3 a {
     }
 }
 
-
-
+@media (max-width: 600px) {
+/*---lq-home--*/
+.trial_s{ padding-top: 0; }
+.trial_s .trial_s_1 span{ width: 100%; display: block; text-align: center; }
+.trial_s .trial_s_1 span a { float: none; width: 100%; color: #da251c; }
+.trial_b h3{ font-size: 24px; }
+.trial_b li{ padding: 15px 5px; margin: 0 0; }
+.serbz{ height: auto; }
+/*---lq-end--*/
+}
 
 @media (max-width: 991px) {
     .case_banner {
